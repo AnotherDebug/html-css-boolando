@@ -15,9 +15,17 @@ body {
     max-width: 1200px;
 }
 
-
 .d-flex {
     display: flex;
+}
+
+.text-red {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.text-strong {
+    font-weight: 600;
 }
 
 
@@ -34,7 +42,8 @@ header .top-fixed {
     top: 0;
     left: 0;
     background-color: #ff6900;
-    box-shadow: 0 4px 2px 0px gray;;
+    box-shadow: 0 4px 2px 0px gray;
+    z-index: 2;
 }
 
 header .topbar {
@@ -54,16 +63,17 @@ header .topbar .menu ul {
     list-style: none;
 }
 
-header .topbar .menu ul li{
+header .topbar .menu ul li {
     display: inline-block;
 }
 
-header .topbar .menu ul li a{
+header .topbar .menu ul li a {
     text-decoration: none;
     align-items: center;
     padding-right: 5px;
     color: white;
 }
+
 /* /menu */
 
 
@@ -77,6 +87,7 @@ header .topbar .logo {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 /* /logo */
 
 /* menu-account */
@@ -86,9 +97,14 @@ header .topbar .menu-account {
     width: 20%;
 }
 
-header .topbar .menu-account p{
+header .topbar .menu-account p {
     padding-left: 10px;
 }
+
+header .topbar .menu-account p i {
+    cursor: pointer;
+}
+
 /* menu-account */
 /* /HEADER */
 
@@ -101,16 +117,89 @@ main {
     padding-bottom: 50px;
 }
 
+/* card */
 main .card {
     width: 33%;
     min-width: 200px;
-    height: 400px;
-    background-color: red;
-    border: 1px solid #000;
     display: inline-block;
     margin-top: 50px;
+    position: relative;
+    font-size: 12px;
 }
 
+/* immagine */
+main .card img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* cambio immagine */
+main .card .img .first {
+    display: block;
+}
+
+main .card .img .second {
+    display: none;
+}
+
+main .card .img:hover .first {
+    display: none;
+}
+
+main .card .img:hover .second {
+    display: block;
+}
+
+/* heart */
+main .card .heart {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    position: absolute;
+    top: 2%;
+    right: 0;
+    cursor: pointer;
+}
+
+main .card .heart:hover {
+   color: red;
+}
+
+/* discount */
+main .card .discount {
+    background-color: #ff0000;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 15%;
+    font-weight: 600;
+    color: white;
+}
+
+/* sustain */
+main .card .sustain {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #008000;
+    position: absolute;
+    left: 14%;
+    bottom: 15%;
+    font-weight: 600;
+    color: white;
+}
+
+/* price */
+main .card .price {
+    text-decoration: line-through;
+}
+
+/* /card */
+/* /MAIN */
 
 
 
