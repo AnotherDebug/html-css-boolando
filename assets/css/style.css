@@ -3,3 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+
+
+/* HEADER */
+.topbar {
+    width: 100%;
+    height: 60px;
+}
+
+.topbar .menu {
+    width: 20%;
+    height: 100%;
+    background-color: orange;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.topbar .logo {
+    width: 60%;
+    height: 100%;
+    background-color: orange;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar .menu-account {
+    width: 20%;
+    height: 100%;
+    background-color: orange;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* /HEADER */
+
+
+/* MAIN */
+main {
+    background-color: aqua;
+    padding-bottom: 50px;
+}
+
+main .card {
+    width: 33%;
+    min-width: 200px;
+    height: 400px;
+    background-color: red;
+    border: 1px solid #000;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: yellow;
+}
+
+footer .info {
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: orange;
+}
+
+footer .social {
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100%;
+    background-color: orange;
+}
