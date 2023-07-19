@@ -5,7 +5,9 @@
 }
 
 
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .container {
     width: 80%;
@@ -31,7 +33,8 @@ header .top-fixed {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: orange;
+    background-color: #ff6900;
+    box-shadow: 0 4px 2px 0px gray;;
 }
 
 header .topbar {
@@ -41,30 +44,52 @@ header .topbar {
 
 header .topbar .menu {
     width: 20%;
-    height: 100%;
-    background-color: orange;
-    border: 1px solid #000;
     align-items: center;
     justify-content: flex-start;
 }
 
-header .topbar .logo {
-    width: 60%;
-    height: 100%;
-    background-color: orange;
-    border: 1px solid #000;
-    align-items: center;
-    justify-content: center;
+
+/* menu */
+header .topbar .menu ul {
+    list-style: none;
 }
 
+header .topbar .menu ul li{
+    display: inline-block;
+}
+
+header .topbar .menu ul li a{
+    text-decoration: none;
+    align-items: center;
+    padding-right: 5px;
+    color: white;
+}
+/* /menu */
+
+
+/* logo */
+header .topbar .logo {
+    align-items: center;
+    width: 60%;
+    background-image: url('../img/boolean-logo.png');
+    background-size: contain;
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* /logo */
+
+/* menu-account */
 header .topbar .menu-account {
-    width: 20%;
-    height: 100%;
-    background-color: orange;
-    border: 1px solid #000;
     align-items: center;
     justify-content: flex-end;
+    width: 20%;
 }
+
+header .topbar .menu-account p{
+    padding-left: 10px;
+}
+/* menu-account */
 /* /HEADER */
 
 
