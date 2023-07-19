@@ -113,7 +113,6 @@ header .topbar .menu-account p i {
 
 /* MAIN */
 main {
-    background-color: aqua;
     padding-bottom: 50px;
 }
 
@@ -125,6 +124,7 @@ main .card {
     margin-top: 50px;
     position: relative;
     font-size: 12px;
+    padding: 5px;
 }
 
 /* immagine */
@@ -175,7 +175,7 @@ main .card .discount {
     display: inline-block;
     padding: 5px 10px;
     position: absolute;
-    left: 0;
+    left: 5px;
     bottom: 15%;
     font-weight: 600;
     color: white;
@@ -203,24 +203,72 @@ main .card .price {
 
 
 
-/* FOOTER */
+
+/* *FOOTER */
 footer {
+    color: white;
+    background-color: black;
+}
+
+/* Sign up */
+footer .row {
     width: 100%;
     height: 80px;
-    background-color: yellow;
+    /* background-color: #000; */
+    justify-content: center;
+    align-items: flex-end;
 }
 
-footer .info {
+footer .row .info {
+    width: 1200px;
+    height: 80px;
     align-items: center;
-    width: 50%;
-    height: 100%;
-    background-color: orange;
+    justify-content: space-between;
 }
 
-footer .social {
+footer .info .property {
+    height: 40px;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-end;
-    width: 50%;
-    height: 100%;
-    background-color: orange;
 }
+
+footer .info .property ul {
+list-style: none;
+}
+
+footer .info .property ul li {
+    display: inline-block;
+    }
+
+footer .info .property ul li a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    font-size: 10px;
+    }
+
+footer .info .social {
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info .social p{
+font-size: 10px;
+text-align: center;
+}
+
+footer .info .social ul {
+    list-style: none;
+}
+
+footer .info .social ul li{
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+footer .info .social ul li i{
+    cursor: pointer;
+}
+/* /FOOTER */
